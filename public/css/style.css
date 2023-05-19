@@ -43,6 +43,70 @@ header.header__top a[tabindex]:focus {
     font-weight: bold;
 }
 
+section.section__top{
+    background-image: url(./../images/showcase.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    background-position: center;
+    padding: 100px 0;
+    color: white;
+}
+
+section.section__top h1{
+   font-size: 4rem;
+   margin-bottom: 30px;
+}
+
+section.section__top p{
+    font-size: 1.3rem;
+ }
+
+section.section__middle {
+    color: white;
+    display: flex;
+    background-color: #35424A;
+    justify-content: space-between;
+    padding: 30px 20px;
+}
+
+section.section__middle h3{
+    font-weight: bold;
+}
+
+section.section__middle__inputs input{
+    padding: 5px ;
+}
+
+section.section__middle__inputs input[type=text]{
+    width: 200px;
+}
+
+section.section__middle__inputs input[type=submit]{
+    background-color: orangered;
+    color: white;
+    padding: 8px 10px ;
+    outline: none;
+    border: none;
+}
+
+
+section.section__bottom{
+    display: flex;
+    text-align: center;
+    margin: 50px 0;
+    gap: 10px;
+    padding: 0 50px;
+}
+
+section.section__bottom img{
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+section.section__bottom h4{
+    margin-bottom: 10px;
+}
 
 footer.footer{
     width: 100%;
