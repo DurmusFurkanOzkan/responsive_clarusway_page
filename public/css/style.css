@@ -5,13 +5,21 @@
 }
 
 
+
 header.header__top{
+    min-width: 375px;
     color: white;
     display: flex;
     justify-content: space-between;
     background-color: #35424A;
     padding: 20px 30px;
+    flex-wrap: wrap;
+    flex-grow: 1;
     border-bottom: 3px solid #A84F86;
+}
+
+header.header__top h1{
+    white-space: nowrap;
 }
 
 header.header__top ul{
@@ -32,4 +40,45 @@ header.header__top a{
 
 header.header__top a[tabindex]:focus {
     color: #A84F86;
+    font-weight: bold;
 }
+
+
+footer.footer{
+    width: 100%;
+    text-align: center;
+    background-color: #35424A;
+    padding: 20px 0;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+footer.footer p{
+    margin-bottom: 5px;
+}
+
+footer.footer img{
+    width: 200px;
+}
+
+
+@media screen and (max-width:700px) {
+
+    header.header__top {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header.header__top h1,ul{
+        text-align: center;
+        margin: auto;
+    }
+
+    header.header__top ul{
+        flex-direction: column;
+    }
+    
+}
+
