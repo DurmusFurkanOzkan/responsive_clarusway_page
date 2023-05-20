@@ -4,11 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Clarusway Web Design</title>
     <link rel="stylesheet" href="/css/style.css" type="text/css">
 </head>
 <body>
+
     <%- include('./header'); %>
+
+    <%- include('./subscribe'); %>
+
+    <section class="services">
+
+        <section class="services__left">
+                <h3>Services</h3>
+                <article class="services__left__article">
+                    <h3>Website Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates assumenda incidunt velit mollitia expedita a explicabo ea repellendus ex veritatis.</p>
+                    <p>Pricing: $1,000 - $3,000</p>
+                </article>
+                <article class="services__left__article">
+                    <h3>Website Maintenance</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates assumenda incidunt velit mollitia expedita a explicabo ea repellendus ex veritatis.</p>
+                    <p>Pricing: $250 per month</p>
+                </article>
+                <article class="services__left__article">
+                    <h3>Website Hosting</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates assumenda incidunt velit mollitia expedita a explicabo ea repellendus ex veritatis.</p>
+                    <p>Pricing: $25 per month</p>
+                </article>
+        </section>
+        
+        <section class="services__right">
+                <h3>Get A Quote</h3>
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" name="name">
+                    <label for="email">Email</label>
+                    <input type="text" name="name">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="" cols="30" rows="5"></textarea>
+                    <input type="submit" value="Send"> 
+                </form>
+        </section>
+
+    </section>
+
     <%- include('./footer'); %>
 </body>
 </html>
